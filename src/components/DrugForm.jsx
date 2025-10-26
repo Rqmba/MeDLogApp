@@ -15,8 +15,11 @@ const DrugForm = ({ onAdd }) => {
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="Add..."
+        className="btn"
       />
-      <button type="submit">Add</button>
+      <button type="submit" className="btn">
+        Add
+      </button>
     </form>
   );
 };

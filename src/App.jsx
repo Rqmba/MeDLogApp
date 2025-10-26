@@ -1,15 +1,17 @@
 import { Routes, Route } from "react-router";
-import Today from "./pages/today";
-import Add from "./pages/add";
+import HomePage from "./pages/homepage";
 import History from "./pages/history";
+import Navbar from "./components/NavBar";
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Today />} />
-      <Route path="/add" element={<Add />} />
-      <Route path="/history" element={<History />} />
-    </Routes>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/history" element={<History />} />
+      </Routes>
+    </>
   );
 };
 
